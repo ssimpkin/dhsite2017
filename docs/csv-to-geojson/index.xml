@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Csv-to-geojsons on Introduction to mapping and spatial methods for the humanities</title>
+    <link>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</link>
+    <description>Recent content in Csv-to-geojsons on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://ssimpkin.github.io/ssimpkin/csv-to-geojson/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSV to GeoJSON</title>
+      <link>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</guid>
+      <description>Overview Geographic clues can be hidden in all kinds of documents. In this exercise, we&amp;rsquo;ll collect addresses from the 1890-1891 Ottawa Directory. Library and Archives Canada has digitized 95 microfiche versions of pre-1901 Canadian directories. These are useful resources for researching where people and businesses were located (and the ads are pretty cool too). The following exercise will require a Google account.
+Data files  Google Sheet with template PDF of the Ottawa Directory from 1890-1891  Installing the geocoder add-on If you haven&amp;rsquo;t already, log into your Google account.</description>
+    </item>
+    
+  </channel>
+</rss>

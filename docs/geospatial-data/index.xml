@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geospatial-data on Introduction to mapping and spatial methods for the humanities</title>
+    <link>http://ssimpkin.github.io/ssimpkin/geospatial-data/</link>
+    <description>Recent content in Geospatial-data on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://ssimpkin.github.io/ssimpkin/geospatial-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geospatial data</title>
+      <link>http://ssimpkin.github.io/ssimpkin/geospatial-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/geospatial-data/</guid>
+      <description>What is GIS? GIS stands for Geographic Information Systems (or Sciences), and refers to the software and techniques used to view, analyse, create, and modify geographic data. We’ll be borrowing some GIS terminology and techniques for this workshop. Traditional GIS software like ArcGIS Desktop and QGIS are desktop-based, but these exercises will focus on open source web-based tools.
+Common data types GIS data comes in two major types: raster and vector.</description>
+    </item>
+    
+  </channel>
+</rss>

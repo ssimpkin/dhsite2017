@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to mapping and spatial methods for the humanities</title>
+    <link>http://ssimpkin.github.io/ssimpkin/</link>
+    <description>Recent content on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://ssimpkin.github.io/ssimpkin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome</title>
+      <link>http://ssimpkin.github.io/ssimpkin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/</guid>
+      <description>Most things happen somewhere, and mapping can be an effective technique for exploring, analysing, and presenting many types of data. This workshop is designed for researchers who are interested in adding a spatial dimension to their research.
+In this two part workshop, participants will be introduced to Geographic Information Systems (GIS) techniques from a humanist’s perspective. Starting from primary sources, participants will learn how to extract spatial “clues” from many types of primary sources, create GIS-friendly data, transform addresses and place names into coordinates and web maps, use georectification techniques to bring digitized historical maps onto webmaps, and learn about online exhibit-building tools that incorporate spatial data.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>http://ssimpkin.github.io/ssimpkin/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/getting-started/</guid>
+      <description>Workshop structure In part one, we’ll learn more about the properties of geospatial data and some common formats you may encounter. We’ll then extract geospatial data clues from historical sources (in this case, a city directory), build a data table with attribute information in Google Sheets with the Geocode by Awesome Table add-on, and create geospatial data from the points in geojson.io.
+Next, we’ll take a look at how analog maps can be brought into the digital world through georectification using Map Warper.</description>
+    </item>
+    
+    <item>
+      <title>Geospatial data</title>
+      <link>http://ssimpkin.github.io/ssimpkin/geospatial-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/geospatial-data/</guid>
+      <description>What is GIS? GIS stands for Geographic Information Systems (or Sciences), and refers to the software and techniques used to view, analyse, create, and modify geographic data. We’ll be borrowing some GIS terminology and techniques for this workshop. Traditional GIS software like ArcGIS Desktop and QGIS are desktop-based, but these exercises will focus on open source web-based tools.
+Common data types GIS data comes in two major types: raster and vector.</description>
+    </item>
+    
+    <item>
+      <title>CSV to GeoJSON</title>
+      <link>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</guid>
+      <description>Overview Geographic clues can be hidden in all kinds of documents. In this exercise, we&amp;rsquo;ll collect addresses from the 1890-1891 Ottawa Directory. Library and Archives Canada has digitized 95 microfiche versions of pre-1901 Canadian directories. These are useful resources for researching where people and businesses were located (and the ads are pretty cool too). The following exercise will require a Google account.
+Data files  Google Sheet with template PDF of the Ottawa Directory from 1890-1891  Installing the geocoder add-on If you haven&amp;rsquo;t already, log into your Google account.</description>
+    </item>
+    
+    <item>
+      <title>Georectifying maps</title>
+      <link>http://ssimpkin.github.io/ssimpkin/georectifying-maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/georectifying-maps/</guid>
+      <description>Overview Existing maps, floorplans and imagery are a useful source of data. They can provide information about changes over time, landcover, settlement patterns, and more. In this exercise, we&amp;rsquo;ll use the web-based tool Map Warper to add geographic coordinates to existing maps in order to view them alongside contemporary data.
+Data files  1901 Fire Insurance Plan of Ottawa 1842 Map of Bytown 1856 Map of Ottawa 1911 Map of Ottawa 1933 Airphoto A4571_64 1933 Airphoto A4571_65 1933 Airphoto A4571_66  Useful links  Map Warper  Creating a Map Warper account From the Map Warper homepage, click on Create Account to sign up for a free account, then log in.</description>
+    </item>
+    
+    <item>
+      <title>Adding data to Leaflet</title>
+      <link>http://ssimpkin.github.io/ssimpkin/adding-data-to-leaflet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/adding-data-to-leaflet/</guid>
+      <description>Overview Leaflet is an open-source web mapping library that can display vector data (points, lines, and polygons) as well as raster overlays like our georectified maps. This intermediate-level exercise is designed to show how our different types of data can be integrated into a single interactive webmap.
+Data files  GeoJSON file with Rideau Street businesses Leaflet example folder  Recommended software  Sublime Text SimpleHTTPServer (Mac), MAMP (Mac) or WampServer (Windows)  Watch out</description>
+    </item>
+    
+    <item>
+      <title>Building exhibits</title>
+      <link>http://ssimpkin.github.io/ssimpkin/building-exhibits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/building-exhibits/</guid>
+      <description>Overview Several online exhibit-building tools incorporate spatial data. In this module, we&amp;rsquo;ll review some of the most common examples used in digital humanities projects (circa 2017).
+Neatline This Omeka add-on was designed to build place-based narratives that are well-integrated with Omeka collections. It is maintained by the Scholars’ Lab at the University of Virginia Library.
+ Example: Georges E. Michaud : Souvenirs d&amp;rsquo;un grand homme by Lysanne Brazeau, Sophie Cayer and Ariane Pelletier as part of the ISI6354 Cultural Heritage Resources course taught by Jada Watson.</description>
+    </item>
+    
+  </channel>
+</rss>

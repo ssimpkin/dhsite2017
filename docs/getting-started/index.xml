@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting-starteds on Introduction to mapping and spatial methods for the humanities</title>
+    <link>http://ssimpkin.github.io/ssimpkin/getting-started/</link>
+    <description>Recent content in Getting-starteds on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://ssimpkin.github.io/ssimpkin/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting started</title>
+      <link>http://ssimpkin.github.io/ssimpkin/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ssimpkin.github.io/ssimpkin/getting-started/</guid>
+      <description>Workshop structure In part one, we’ll learn more about the properties of geospatial data and some common formats you may encounter. We’ll then extract geospatial data clues from historical sources (in this case, a city directory), build a data table with attribute information in Google Sheets with the Geocode by Awesome Table add-on, and create geospatial data from the points in geojson.io.
+Next, we’ll take a look at how analog maps can be brought into the digital world through georectification using Map Warper.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://ssimpkin.github.io/ssimpkin"
 languageCode = "en-us"
 title = "Introduction to mapping and spatial methods for the humanities"
 theme = "hugo-material-docs"
@@ -6,6 +6,7 @@ metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
+publishDir = "docs"
 
 [params]
 	# General information

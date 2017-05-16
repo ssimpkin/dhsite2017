@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/geospatial-data/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/georectifying-maps/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/adding-data-to-leaflet/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/building-exhibits/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/adding-data-to-leaflet/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/building-exhibits/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/csv-to-geojson/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/georectifying-maps/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/geospatial-data/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/getting-started/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ssimpkin.github.io/ssimpkin/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

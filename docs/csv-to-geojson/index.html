@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>CSV to GeoJSON - Introduction to mapping and spatial methods for the humanities</title>
+    <meta name="generator" content="Hugo 0.20.7" />
+
+    
+    <meta name="description" content="Tutorial designed for DHSITE 2017 in Ottawa.">
+    
+    <link rel="canonical" href="http://ssimpkin.github.io/ssimpkin/csv-to-geojson/">
+    
+    <meta name="author" content="Sarah Simpkin">
+    
+
+    <meta property="og:url" content="http://ssimpkin.github.io/ssimpkin/csv-to-geojson/">
+    <meta property="og:title" content="Introduction to mapping and spatial methods for the humanities">
+    <meta property="og:image" content="http://ssimpkin.github.io/ssimpkin/images/logo.jpg">
+    <meta name="apple-mobile-web-app-title" content="Introduction to mapping and spatial methods for the humanities">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://ssimpkin.github.io/ssimpkin/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://ssimpkin.github.io/ssimpkin/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://ssimpkin.github.io/ssimpkin/fonts/icon.eot');
+        src: url('http://ssimpkin.github.io/ssimpkin/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('http://ssimpkin.github.io/ssimpkin/fonts/icon.woff')
+               format('woff'),
+             url('http://ssimpkin.github.io/ssimpkin/fonts/icon.ttf')
+               format('truetype'),
+             url('http://ssimpkin.github.io/ssimpkin/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://ssimpkin.github.io/ssimpkin/stylesheets/application.css">
+    <link rel="stylesheet" href="http://ssimpkin.github.io/ssimpkin/stylesheets/temporary.css">
+    <link rel="stylesheet" href="http://ssimpkin.github.io/ssimpkin/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://ssimpkin.github.io/ssimpkin/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="http://ssimpkin.github.io/ssimpkin/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-cyan palette-accent-amber">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        CSV to GeoJSON
+      </div>
+    </div>
+
+    
+    <div class="button button-twitter" role="button" aria-label="Twitter">
+       <a href="https://twitter.com/sarahsimpkin" title="@sarahsimpkin on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+    </div>
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/ssimpkin" title="@ssimpkin on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="http://ssimpkin.github.io/ssimpkin" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://ssimpkin.github.io/ssimpkinimages/logo.jpg">
+        </div>
+      
+      <div class="name">
+        <strong>Introduction to mapping and spatial methods for the humanities </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Welcome" href="http://ssimpkin.github.io/ssimpkin/">
+	
+	Welcome
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Getting started" href="http://ssimpkin.github.io/ssimpkin/getting-started/">
+	
+	Getting started
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Geospatial data" href="http://ssimpkin.github.io/ssimpkin/geospatial-data/">
+	
+	Geospatial data
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="CSV to GeoJSON" href="http://ssimpkin.github.io/ssimpkin/csv-to-geojson/">
+	
+	CSV to GeoJSON
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Georectifying maps" href="http://ssimpkin.github.io/ssimpkin/georectifying-maps/">
+	
+	Georectifying maps
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Adding data to Leaflet" href="http://ssimpkin.github.io/ssimpkin/adding-data-to-leaflet/">
+	
+	Adding data to Leaflet
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Building exhibits" href="http://ssimpkin.github.io/ssimpkin/building-exhibits/">
+	
+	Building exhibits
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+          <li>
+            <a href="https://twitter.com/sarahsimpkin" target="_blank" title="@sarahsimpkin on Twitter">
+              @sarahsimpkin on Twitter
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/ssimpkin" target="_blank" title="@ssimpkin on GitHub">
+              @ssimpkin on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:sarahsimpkin@gmail.com" title="Email of sarahsimpkin@gmail.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>CSV to GeoJSON </h1>
+
+			
+
+<h2 id="overview">Overview</h2>
+
+<p>Geographic clues can be hidden in all kinds of documents. In this exercise, we&rsquo;ll collect addresses from the 1890-1891 Ottawa Directory. Library and Archives Canada has digitized <a href="http://www.bac-lac.gc.ca/eng/discover/directories-collection/Pages/directories-collection.aspx">95 microfiche versions of pre-1901 Canadian directories</a>. These are useful resources for researching where people and businesses were located (and the ads are pretty cool too). The following exercise will require a Google account.</p>
+
+<p><img src="http://ssimpkin.github.io/ssimpkin/images/directory.jpg" alt="Image of directories" /></p>
+
+<h3 id="data-files">Data files</h3>
+
+<ul>
+<li><a href="https://docs.google.com/spreadsheets/d/1ClP7IUjAIs50CLtJxRpy8zwd2PDYy0BmyDBGS8Uf00Q/edit?usp=sharing">Google Sheet with template</a></li>
+<li><a href="https://ssimpkin.github.io/spatial-humanities/images/Directory_1890.pdf">PDF of the Ottawa Directory from 1890-1891</a></li>
+</ul>
+
+<h2 id="installing-the-geocoder-add-on">Installing the geocoder add-on</h2>
+
+<p>If you haven&rsquo;t already, <a href="https://www.google.ca">log into your Google account</a>.</p>
+
+<p>Next, visit the <a href="https://chrome.google.com/webstore/detail/geocode-by-awesome-table/cnhboknahecjdnlkjnlodacdjelippfg?hl=en">Geocode by Awesome Table</a> page to download the add-on. The Geocode tool links the spreadsheet content to the Google Maps API and allows us to convert address information into geographic coordinates, right in the spreadsheet itself! It also provides some basic mapping functionality.</p>
+
+<p><img src="http://ssimpkin.github.io/ssimpkin/images/geocoder-download.jpeg" alt="Geocoder add-on page" /></p>
+
+<h2 id="adding-data-to-the-table">Adding data to the table</h2>
+
+<p>Make a copy of the <a href="https://docs.google.com/spreadsheets/d/1ClP7IUjAIs50CLtJxRpy8zwd2PDYy0BmyDBGS8Uf00Q/edit?usp=sharing">Google Sheets template</a> by clicking <code>File &gt; Make a copy</code>.</p>
+
+<p>Next, open the directory PDF and scroll to page 117. You&rsquo;ll see that I&rsquo;ve begun transcribing the information from the businesses along the north side of Rideau Street onto the spreadsheet.</p>
+
+<p>Each business is given its own line, and each piece of information about the business is given its own column.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As you can imagine, modern-day geocoders work best with modern-day address data (we may be pushing it a little). Watch out for renumbered and renamed streets if you attempt this process with historical data. Reference materials such as fire insurance plans can be useful for doing a quality check of historical addresses.</p>
+</div>
+
+<p>Choose <code>Add-ons &gt; Geocode by Awesome Table &gt; Start Geocoding</code> to begin. A menu will open on the right side of the screen.</p>
+
+<p>Since the geocoder only looks in one column to find all of the address information, we need to smoosh together the four columns that contain pieces of the address. The add-on will do this for us. Click <code>Are your addresses in multiple columns?</code> to bring up a second menu. Check <em>street_address</em>, <em>city</em>, <em>province</em>, and <em>country</em>, then click <code>Insert column</code>. A new column with the full address will appear.</p>
+
+<p><img src="http://ssimpkin.github.io/ssimpkin/images/columns.jpeg" alt="Table preview" /></p>
+
+<p>Next, return to the right side menu. Choose <em>Sheet1</em> as the Current sheet and <em>Full Address</em> as the Address column. Press <code>Geocode!</code> and watch as latitude and longitude coordinates appear in new columns.</p>
+
+<h2 id="exporting-a-csv-file">Exporting a CSV file</h2>
+
+<p>Export the completed table as a CSV file by clicking <code>File &gt; Download as &gt; Comma-separated values (.csv, current sheet)</code>. Save to your computer.</p>
+
+<h2 id="previewing-with-geojson-io">Previewing with geojson.io</h2>
+
+<p>We&rsquo;ll be converting the file from a table to a webmap-friendly format called GeoJSON using a website called <a href="https://geojson.io">geojson.io</a>. The site is a useful way to preview geojson files, trace basic shapes, and convert GeoJSON files to other spatial formats like shapefiles and KMLs.</p>
+
+<p>Drag and drop the CSV file over the map on <a href="https://geojson.io">geojson.io</a> to import the data.</p>
+
+<p><img src="http://ssimpkin.github.io/ssimpkin/images/geojson.jpeg" alt="geojson.io page with points displayed" /></p>
+
+<p>You&rsquo;ll see that points have appeared along Rideau Street. The geocoder took a look at the street addresses and made a best guess about where they might go, based on modern-day data.</p>
+
+<p>You can imagine that the buildings along Rideau Street have likely undergone some major changes since 1890. Fortunately, we can import a reference image to help us quality check the point placements.</p>
+
+<p>Click <code>Meta &gt; Add map layer</code>, then paste in the following URL: <code>http://mapwarper.net/maps/tile/20531/{z}/{x}/{y}.png</code>. Click <code>OK</code>, then enter a layer name (I used <em>1901</em>) and click <code>OK</code> again.</p>
+
+<p>A new overlay will appear showing a fire insurance plan from 1901. Cool, right? We&rsquo;ll be learning how to make these later in the workshop.</p>
+
+<p><img src="http://ssimpkin.github.io/ssimpkin/images/geojson-overlay.jpeg" alt="geojson.io page with 1901 map overlay" /></p>
+
+<p>Make any adjustments to the address points (sometimes addresses will be in the centres of modern-day buildings) by clicking on an individual point and the pencil icon on the right side. Using the historical map as a reference, we can have a better idea of how each block looked closer to the time the directory was published.</p>
+
+<p>Once you&rsquo;re happy with the point placement, click <code>Save</code> next to the pencil icon and then <code>Save &gt; GeoJSON</code> to export the points as a GeoJSON file.</p>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="http://ssimpkin.github.io/ssimpkin/geospatial-data/" title="Geospatial data">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Geospatial data
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://ssimpkin.github.io/ssimpkin/georectifying-maps/" title="Georectifying maps">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Georectifying maps
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="http://ssimpkin.github.io/ssimpkin/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

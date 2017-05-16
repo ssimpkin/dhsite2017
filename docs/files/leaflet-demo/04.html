@@ -1,0 +1,66 @@
+
+<!-- 
+  ****************************************************************************
+  Leaflet demo map by Sarah Simpkin / sarahsimpkin@gmail.com
+  Based on a tutorial by Andy Woodruff and Ryan Mullins: http://maptimeboston.github.io/leaflet-intro/
+  STEP 3: Adding pop-ups
+  ****************************************************************************
+-->
+
+<!-- ~ HTML code to set up the page where the map will go ~ -->
+
+<html>
+<head>
+  <title>Ottawa web map</title>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="jquery-2.1.1.min.js"></script>
+  <style>
+      <!-- ~ Maximizes the size of the map on the page ~ -->
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; left:0; right:0; width:100%; }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+  // ~ Initializes the map and customizes the default coordinates and zoom level ~
+  var map = L.map('map').setView([45.42621, -75.69243], 19);
+
+  // ~ Loads a tile layer from CartoDB for our background map ~
+  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+    {
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+      maxZoom: 20,
+      minZoom: 1
+    }).addTo(map);
+
+  // ~ Loads a GeoJSON file with our points ~
+  $.getJSON("businesses.geojson",function(data){
+    L.geoJson(data, {
+      pointToLayer: function(feature,latlng){
+        var marker = L.marker(latlng);
+
+        // ~ Make a pop-up, configure which attributes to display
+        marker.bindPopup('<strong>' + feature.properties.business_name + '</strong></br>' + feature.properties.description); 
+
+        return marker;
+      }
+    }).addTo(map);
+
+  // ~ Loads a tile layer from Map Warper ~
+  L.tileLayer('http://mapwarper.net/maps/tile/20531/{z}/{x}/{y}.png',
+    {
+      attribution: 'Tiles by <a href="http://mapwarper.net/maps/20531">Map Warper user sarahsimpkin</a>',
+      maxZoom: 20,
+      minZoom: 1
+    }).addTo(map);
+
+
+});
+  </script>
+</body>
+</html>
