@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Introduction to mapping and spatial methods for the humanities</title>
-    <link>http://ssimpkin.github.io/dhsite2017/categories/</link>
+    <link>https://ssimpkin.github.io/dhsite2017/categories/</link>
     <description>Recent content in Categories on Introduction to mapping and spatial methods for the humanities</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://ssimpkin.github.io/dhsite2017/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ssimpkin.github.io/dhsite2017/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

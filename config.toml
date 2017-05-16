@@ -1,4 +1,4 @@
-baseurl = "http://ssimpkin.github.io/dhsite2017/"
+baseurl = "https://ssimpkin.github.io/dhsite2017/"
 languageCode = "en-us"
 title = "Introduction to mapping and spatial methods for the humanities"
 theme = "hugo-material-docs"
