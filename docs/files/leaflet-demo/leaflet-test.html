@@ -3,6 +3,7 @@
   ****************************************************************************
   Leaflet demo map by Sarah Simpkin / sarahsimpkin@gmail.com
   Based on a tutorial by Andy Woodruff and Ryan Mullins: http://maptimeboston.github.io/leaflet-intro/
+  STEP 3: Adding pop-ups
   ****************************************************************************
 -->
 
@@ -42,19 +43,12 @@
     L.geoJson(data, {
       pointToLayer: function(feature,latlng){
         var marker = L.marker(latlng);
-        
+
         // ~ Make a pop-up, configure which attributes to display
-        marker.bindPopup('<strong>' + feature.properties.business_name + '</strong></br>' + feature.properties.description);
+        marker.bindPopup('<strong>' + feature.properties.business_name + '</strong></br>' + feature.properties.description); 
+
         return marker;
       }
-    }).addTo(map);
-
-  // ~ Loads a tile layer from Map Warper ~
-  L.tileLayer('http://mapwarper.net/maps/tile/20531/{z}/{x}/{y}.png',
-    {
-      attribution: 'Tiles by <a href="http://mapwarper.net/maps/20531">Map Warper user sarahsimpkin</a>',
-      maxZoom: 20,
-      minZoom: 1
     }).addTo(map);
 
 });
