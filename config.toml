@@ -1,0 +1,81 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Introduction to mapping and spatial methods for the humanities"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+	# General information
+	author = "Sarah Simpkin"
+	description = "Tutorial designed for DHSITE 2017 in Ottawa."
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	logo = "images/logo.jpg"
+
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "cyan"
+    	accent  = "amber"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = "sarahsimpkin"
+	github  = "ssimpkin"
+	email   = "sarahsimpkin@gmail.com"
+
+[[menu.main]]
+	name   = "Welcome"
+	url    = "/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Getting started"
+	url    = "getting-started/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Geospatial data"
+	url    = "geospatial-data/"
+	weight = 30
+
+[[menu.main]]
+	name   = "CSV to GeoJSON"
+	url    = "csv-to-geojson/"
+	weight = 40
+
+[[menu.main]]
+	name   = "Georectifying maps"
+	url    = "georectifying-maps/"
+	weight = 50
+
+[[menu.main]]
+	name   = "Adding data to Leaflet"
+	url    = "adding-data-to-leaflet/"
+	weight = 60
+
+[[menu.main]]
+	name   = "Building exhibits"
+	url    = "building-exhibits/"
+	weight = 70
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true

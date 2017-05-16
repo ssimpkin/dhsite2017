@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Building-exhibits on Introduction to mapping and spatial methods for the humanities</title>
+    <link>/building-exhibits/</link>
+    <description>Recent content in Building-exhibits on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/building-exhibits/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building exhibits</title>
+      <link>/building-exhibits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/building-exhibits/</guid>
+      <description>Overview Several online exhibit-building tools incorporate spatial data. In this module, we&amp;rsquo;ll review some of the most common examples used in digital humanities projects (circa 2017).
+Neatline This Omeka add-on was designed to build place-based narratives that are well-integrated with Omeka collections. It is maintained by the Scholars’ Lab at the University of Virginia Library.
+ Example: Georges E. Michaud : Souvenirs d&amp;rsquo;un grand homme by Lysanne Brazeau, Sophie Cayer and Ariane Pelletier as part of the ISI6354 Cultural Heritage Resources course taught by Jada Watson.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>/geospatial-data/</loc>
+  </url>
+  
+  <url>
+    <loc>/csv-to-geojson/</loc>
+  </url>
+  
+  <url>
+    <loc>/georectifying-maps/</loc>
+  </url>
+  
+  <url>
+    <loc>/adding-data-to-leaflet/</loc>
+  </url>
+  
+  <url>
+    <loc>/building-exhibits/</loc>
+  </url>
+  
+  <url>
+    <loc>/adding-data-to-leaflet/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/building-exhibits/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/csv-to-geojson/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/georectifying-maps/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/geospatial-data/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/getting-started/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adding-data-to-leaflets on Introduction to mapping and spatial methods for the humanities</title>
+    <link>/adding-data-to-leaflet/</link>
+    <description>Recent content in Adding-data-to-leaflets on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/adding-data-to-leaflet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adding data to Leaflet</title>
+      <link>/adding-data-to-leaflet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/adding-data-to-leaflet/</guid>
+      <description>Overview Leaflet is an open-source web mapping library that can display vector data (points, lines, and polygons) as well as raster overlays like our georectified maps. This intermediate-level exercise is designed to show how our different types of data can be integrated into a single interactive webmap.
+Data files  GeoJSON file with Rideau Street businesses Leaflet example folder  Recommended software  Sublime Text SimpleHTTPServer (Mac), MAMP (Mac) or WampServer (Windows)  Watch out</description>
+    </item>
+    
+  </channel>
+</rss>

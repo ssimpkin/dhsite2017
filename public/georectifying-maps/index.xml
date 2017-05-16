@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Georectifying-maps on Introduction to mapping and spatial methods for the humanities</title>
+    <link>/georectifying-maps/</link>
+    <description>Recent content in Georectifying-maps on Introduction to mapping and spatial methods for the humanities</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/georectifying-maps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Georectifying maps</title>
+      <link>/georectifying-maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/georectifying-maps/</guid>
+      <description>Overview Existing maps, floorplans and imagery are a useful source of data. They can provide information about changes over time, landcover, settlement patterns, and more. In this exercise, we&amp;rsquo;ll use the web-based tool Map Warper to add geographic coordinates to existing maps in order to view them alongside contemporary data.
+Data files  1901 Fire Insurance Plan of Ottawa 1842 Map of Bytown 1856 Map of Ottawa 1911 Map of Ottawa 1933 Airphoto A4571_64 1933 Airphoto A4571_65 1933 Airphoto A4571_66  Useful links  Map Warper  Creating a Map Warper account From the Map Warper homepage, click on Create Account to sign up for a free account, then log in.</description>
+    </item>
+    
+  </channel>
+</rss>
