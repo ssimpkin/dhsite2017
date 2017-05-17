@@ -11,7 +11,7 @@ Geographic clues can be hidden in all kinds of documents. In this exercise, we'l
 
 ### Data files
 * [Google Sheet with template](https://docs.google.com/spreadsheets/d/1ClP7IUjAIs50CLtJxRpy8zwd2PDYy0BmyDBGS8Uf00Q/edit?usp=sharing)
-* [PDF of the Ottawa Directory from 1890-1891](https://ssimpkin.github.io/spatial-humanities/images/Directory_1890.pdf)
+* [PDF of the Ottawa Directory from 1890-1891](/files/Directory_1890.pdf)
 
 
 ## Installing the geocoder add-on
