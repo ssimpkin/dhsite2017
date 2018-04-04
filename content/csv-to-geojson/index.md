@@ -48,9 +48,9 @@ Export the completed table as a CSV file by clicking ```File > Download as > Com
 
 ## Previewing with geojson.io
 
-We'll be converting the file from a table to a webmap-friendly format called GeoJSON using a website called [geojson.io](https://geojson.io). The site is a useful way to preview geojson files, trace basic shapes, and convert GeoJSON files to other spatial formats like shapefiles and KMLs.
+We'll be converting the file from a table to a webmap-friendly format called GeoJSON using a website called [geojson.io](http://geojson.io). The site is a useful way to preview geojson files, trace basic shapes, and convert GeoJSON files to other spatial formats like shapefiles and KMLs.
 
-Drag and drop the CSV file over the map on [geojson.io](https://geojson.io) to import the data.
+Drag and drop the CSV file over the map on [geojson.io](http://geojson.io) to import the data.
 
 ![geojson.io page with points displayed](/images/geojson.jpeg)
 
